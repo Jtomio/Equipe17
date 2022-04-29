@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+    body{
+        font-size: 100%;
+        background: #E5E5E5;
+    }
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 24px;
+    }
+
+    .cabecalho-imagem{
+        height: 190px;
+    }
+
+    .cabecalho-menu{
+        display: flex;
+        gap: 32px;
+    }
+
+    .cabecalho-menu-item{
+        font-family: 'Sarala';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .conteudo-principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+             
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .conteudo-principal-escrito-titulo{
+        font-family: Righteous;
+        font-weight: 400;
+        font-size: 38px;
+        left: -5px;
+        color: #282447;
+    }
+
+    .conteudo-principal-escrito-paragrafo{
+        font-family: Righteous;
+        font-weight: 250;
+        font-size: 20px;
+        color: #282447;
+    
+    }
+
+    .conteudo-principal-escrito-imagem{
+        display: flex;
+        align-items: center;  
+        justify-content: right;   
+    }
+
+    
