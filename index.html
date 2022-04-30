@@ -4,45 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Hackthon da Equipe 17 - 2º Desafio">
-    <title>Hackthon Equipe 17 <img src="assets/Logo-17.png" alt="img"></title>
+    <title>Hackthon Equipe 17></title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="icon" href="assets/17-title.png">
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="assets/Logo-17.png" alt="Logo da Equipe 17"><!--Logo no cabeçalho-->
+    <header class="cabecalho" id="cabecalho">
+        <img class="cabecalho-imagem" src="assets/Logo-17.png" id="headerLogo" alt="Logo da Equipe 17"><!--Logo no cabeçalho-->
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">Home</a>
-            <a class="cabecalho-menu-item"> Planeje</a>
-            <a class="cabecalho-menu-item">Contato</a>
+            <a class="cabecalho-menu-item" href="#">Home</a>
+            <a class="cabecalho-menu-item" href="#Planeje">Planeje</a>
+            <a class="cabecalho-menu-item" href="#Contato">Contato</a>
+            <input type="checkbox" class="checkbox" id="chk"/><!--Checkbox para modo dark-->
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            <script src="script.js"></script>
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script><!--Coleta as imagens da web para função darkmode-->
         </nav><!--Navegador-->
     </header><!--Cabeçalho-->
 
     <main class="conteudo"> 
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-               <h1 class="conteudo-principal-escrito-titulo">Assuma o controle das suas finanças</h1>
-               <p class="conteudo-principal-escrito-paragrafo">Os príncipais benefícios dessa ferramenta são:</p>
-               <p></p>
-               <p class="conteudo-principal-escrito-paragrafo">   >>> Ter o controle mensal das finanças</p>
-               <p class="conteudo-principal-escrito-paragrafo">   >>> Controle dos rendimentos do fluxo de caixa</p>
-               <p class="conteudo-principal-escrito-paragrafo">   >>> Ter uma visão completa do resumo financeiro anual</p>
-               <p class="conteudo-principal-escrito-paragrafo">   >>> Realizar previsões para investimento futuros.</p> 
+        <section class="conteudo-principal" id="conteudoPrincipal">
+            <div class="conteudo-principal-left">
+               <h1 class="conteudo-principal-left-titulo" id="Home">Assuma o controle das suas finanças</h1>
+               <ul>
+                   <li class="conteudo-principal-left-paragrafo" id="li1">Ter o controle mensal das finanças</li>
+                   <li class="conteudo-principal-left-paragrafo" id="li1">Controle dos rendimentos do fluxo de caixa</li>
+                   <li class="conteudo-principal-left-paragrafo" id="li1">Ter uma visão completa do resumo financeiro anual</li>
+                   <li class="conteudo-principal-left-paragrafo" id="li1">Realizar previsões para investimento futuros.</li>
+                </ul>
             </div>
-            <img class="conteudo-principal-escrito-imagem" src="assets/img-Dir-Calculadora.png" alt="Imagem direita da sessão"><!--Imagem de explicação da ferramenta-->
+            <div class="conteudo-principal-2">
+            <h1 class="conteudo-principal-right" id="HomeRight">A Vida Financeira Sempre Trás Mudanças</h1><!--Texto lado direito-->
+                <ul>
+                    <p class="conteudo-principal-right" id="R1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugiat non quia rerum fugit dolorem neque a exercitationem repellendus, excepturi porro cupiditate aut ab sunt numquam nulla perferendis ex.</p>
+                </ul>
+            </div>
         </section><!--Primeira sessão do corpo principal-->
 
         <section class="conteudo-secundario">
-            <h2 class="conteudo-secundario-titulo2"> Planeje seus gastos e Crie Objetivos</h2>
-            <p class="conteudo-secundario-paragrafo"> Faça orçamento mensais, mantenha seus gastos sob controle</p> 
-            <p class="conteudo-secundario-paragrafo"> para juntar dinheiro e alcançar aquele sonho tão aguardado</p>
-           
+            <h2 class="conteudo-secundario-titulo2" id="Planeje"> Planeje seus gastos e Crie Objetivos</h2>
+            <div>
+            <p class="conteudo-secundario-paragrafo" id="pf"> Faça orçamento mensais, mantenha seus gastos sob controle</p> 
+            <p class="conteudo-secundario-paragrafo" id="pf"> para juntar dinheiro e alcançar aquele sonho tão aguardado</p>
+            </div>
+            <div class="conteudo-secundario-imagem">
+                <img src="assets/Planeje.png" id="imgPlaneje" alt="Imagem Planeje"><!--Img explicativo ao texto-->
+            </div>
         </section><!--Segunda sessão do corpo principal-->
+
+        <section>
+            <div>
+            <form class="form">
+                <h2 class="Contato" id="Contato">Contate-nos</h2>
+                <input class="campo" type="text" placeholder="Nome">
+                <input class="campo" type="email" placeholder="E-mail">
+                <input class="botao" type="submit" value="Enviar">
+            </form>
+            </div>
+        </section>
+
+        
     </main><!--Principal-->
 
     <footer class="rodape">
-       <img class="rodape-imagem" src="assets/github.png" alt="Contato Github">
-       <img class="rodape-imagem" src="assets/Linkedin.png" alt="Contato Linkedin">
-
+       <ul>
+           <li class="rodape-left"><img src="assets/Logo-17.png" class="rodapeLogo"><h2>Tech Academy</h2>
+            <p>Equipe 17 - 2º Desafio Hackthon</p>
+           </li>
+        </ul>
+        <ul>
+           <li class="rodape-center"><img src="assets/github.png" class="LogoGit"><!--Contato Github dos membros-->
+            <a href="https://github.com/Jtomio" target="_blank">Jeison Tomio</a> 
+            <a href="https://github.com/Lucas Tiriva" target="_blank"> Lucas Tiriva</a>
+        </ul>
+        <ul>   
+        </li>
+           <li class="rodape-right"><img src="assets/Linkedin.png" class="LogoLin"><!--Contato Linkdin dos membros-->
+            <a href="https://www.linkedin.com/in/jeison-tomio/" target="_blank">Jeison Tomio</a> 
+            <a href="https://www.linkedin.com/in/lucastiriva/" target="_blank"> Lucas Tiriva</a>
+           </li>
+        </ul>
     </footer><!--Rodapé-->
 </body>
 </html>

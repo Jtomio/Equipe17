@@ -14,26 +14,90 @@
     body{
         font-size: 100%;
         background: #E5E5E5;
+        font-family: sans-serif;
+        font-size: 1em;
+        transition: background 0.2 linear;        
+    }
+    body .dark{
+        background-color: #232c35;
+    }
+
+    .checkbox{
+        opacity: 0;
+        position: absolute;
+    }
+
+    .label{
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+        transform: scale(1.5);
+    }
+    
+    .label .ball{
+        background-color: goldenrod;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(24px);
+        transition: transform 0.2s linear;
+    }
+
+    .checkbox:checked + .label .ball{
+        transform: translateX(0px);
+        background-color:#fff;
+    }
+
+    .chk{
+        margin-right: 0;
+    }
+
+    .fa-moon{
+        color: white;
+    }
+
+    .fa-sun{
+        color: yellow;
     }
 
     .cabecalho{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-        padding: 24px;
+        justify-content: space-between;
+        padding: 15px;
+        background: brown;
+        width: 100%;
+        position:fixed;
     }
 
     .cabecalho-imagem{
-        height: 190px;
+        height: 100px;
     }
 
     .cabecalho-menu{
         display: flex;
-        gap: 32px;
+        gap: 39px;
+    }
+
+    a:hover{
+        transition: 0.5s;
+        color: black;
     }
 
     .cabecalho-menu-item{
+        
+        color: white;
         font-family: 'Sarala';
         font-style: normal;
         font-weight: 400;
@@ -41,41 +105,104 @@
         line-height: 44px;
     }
 
-    .conteudo-principal{
+    #Planeje{
+        text-align: justify;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content:space-around;
-             
+        font-size: 30px;
     }
 
-    .conteudo-principal-escrito{
+    #imgPlaneje{
+        align-items: right;
+        margin-right: 0;
+    }
+
+   .contato{
+        margin: 200px;
+        font-family: Righteous;
+        font-size: larger;
+        display:grid;
+        margin-left: 25%;        
+    }
+
+    .form{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 25%;
+    }
+
+    input{
+        margin-top: 20px;
+        height: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+    }
+
+    form [type="submit"]{
+        height: 50px;
+        
+        background-color: #f3f3b5;
+        color: black;
+        font-weight: bold;
+    }
+    .rodape{
+       height: 150px;
+       background: whitesmoke;
+        
+    }
+
+    .rodape-left{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: unset;
+        margin-top: 50px;
+        text-align: left;
+        color: gray;
+        }
+    
+    .rodape h2{
+        margin-left: 1%;
+    }
+    .rodape-center{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: unset;
+        margin-top: -110px;
+        text-align:center;
+        justify-content: center;
+    }
+    .rodape a{
         display: flex;
         flex-direction: column;
-
-
-    }
-
-    .conteudo-principal-escrito-titulo{
-        font-family: Righteous;
-        font-weight: 400;
-        font-size: 38px;
-        left: -5px;
-        color: #282447;
-    }
-
-    .conteudo-principal-escrito-paragrafo{
-        font-family: Righteous;
-        font-weight: 250;
+        color: gray;
+        }
+    
+    .rodape-right{
+        font-family: Roboto;
         font-size: 20px;
-        color: #282447;
-    
-    }
-
-    .conteudo-principal-escrito-imagem{
-        display: flex;
-        align-items: center;  
-        justify-content: right;   
+        font-weight: bold;
+        text-transform: unset;
+        margin-top: -110px;
+        margin-right: 1%;
+        text-align: right;
     }
 
     
+    .LogoGit{
+        height: 50px;
+    }
+    .rodapeLogo{
+        height: 50px;
+        margin-left: 4%;
+    }
+
+    .LogoLin{
+        height: 60px;
+        margin-right: 1%;
+    }

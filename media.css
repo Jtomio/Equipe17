@@ -1,0 +1,44 @@
+@media screen and (max-width: 800px){
+
+    #cabecalho{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        padding: 2px;
+        background: brown;
+        width: 100%;
+        position:fixed;
+    }
+    #cabecalho .chk{
+        margin-right: 0%;
+    }
+    #headerLogo{
+        display: none;
+    }
+    #home{
+        flex-direction: column;
+        margin-top: auto;
+    }
+    
+    form{
+        margin: 5%;
+        width: 100%;
+    }
+    input{
+        align-self: center;
+    }
+    ul{
+        text-align: center;
+    }
+    img .conteudo-principal-escrito-imagem{
+        display: none;
+    }
+    #imgPlaneje{
+        display: none;
+    }
+
+    
+}
+
+    
