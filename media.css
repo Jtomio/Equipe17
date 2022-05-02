@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 
     #cabecalho{
         display:flex;
@@ -16,11 +16,19 @@
     #headerLogo{
         display: none;
     }
-    #home{
-        flex-direction: column;
-        margin-top: auto;
+    #conteudo{
+        flex: 1 1 300px;
+        
     }
     
+    .section-1{
+        flex-wrap: wrap;
+    }
+
+    .img1, .img2{
+        display: none;
+    }
+
     form{
         margin: 5%;
         width: 100%;
